@@ -1,5 +1,31 @@
 @media screen and (max-width: 576px) {
-   .navbar, .nav-link{
+   .navbar, .nav-link, .teams{
     flex-direction: column;
    }
+   .team-img-container, .fact-contaner, .sponsor-img{
+    grid-template-columns: repeat(1,1fr);
+    margin-left: 20px auto;
+}
+.fact-contaner{
+    justify-items: center;
+    gap: 24px;
+}
+.sponsor-img{
+    gap:35px
+    justify-items:center;
+}
+}
+
+/* medium device  */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .teams{
+        flex-direction:column;
+    }
+    .our-features{
+        margin: 50px auto;
+    }
+    .sponsor-img{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
 }
